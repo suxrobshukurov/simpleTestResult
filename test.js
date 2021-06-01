@@ -32,6 +32,7 @@
       */
      get_api_path(object, template)
      {
+         // функция подготовки строки 
 		const result = template.replace(/%(\w+)%/g, (_, str) => {
 			if (object[str]) {
 				return encodeURIComponent(object[str]);
